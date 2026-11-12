@@ -1,0 +1,19 @@
+{
+  "name": "click-media",
+  "interface": {
+    "displayName": "CLICK Media"
+  },
+  "plugins": [
+    {
+      "name": "click-video-mac",
+      "source": {
+        "source": "local",
+        "path": "./plugins/click-video-mac"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

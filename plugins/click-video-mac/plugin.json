@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "click-video-mac",
+  "version": "0.4.9",
+  "description": "Bản cho máy Mac chip Apple M (macOS 13 trở lên). Dựng video TikTok 9:16 tự động từ video quay, file giọng hoặc nội dung ảnh cuộn, theo brief và thương hiệu từng khách. © 2026 Nguyễn Bá Duy, phân phối bởi CLICK Media.",
+  "author": {
+    "name": "Nguyễn Bá Duy (chủ sở hữu); phân phối: CLICK Media",
+    "url": "https://congty.click"
+  },
+  "homepage": "https://congty.click",
+  "license": "LicenseRef-CLICK-Proprietary",
+  "keywords": [
+    "video",
+    "tiktok",
+    "capcut",
+    "edit",
+    "vietnamese"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "NBD Video (Mac)",
+        "shortDescription": "Dựng video TikTok tự động theo brief, xuất MP4 hoặc CapCut.",
+        "longDescription": "Plugin dựng video TikTok 9:16 từ video quay, file giọng hoặc nội dung ảnh cuộn. Cần key bản quyền: lần đầu dùng, trợ lý sẽ hỏi key và cho xem Thoả thuận cấp phép.",
+        "developerName": "Nguyễn Bá Duy",
+        "category": "Productivity",
+        "websiteURL": "https://congty.click",
+        "defaultPrompt": [
+          "Dựng video từ file này",
+          "Mở form Brief"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "click-media",
+  "owner": {
+    "name": "CLICK Media (phân phối), chủ sở hữu: Nguyễn Bá Duy"
+  },
+  "description": "Plugin dựng video TikTok tự động của CLICK Media cho Claude Code trên máy Mac.",
+  "plugins": [
+    {
+      "name": "click-video-mac",
+      "source": "./plugins/click-video-mac",
+      "description": "Bản cho máy Mac chip Apple M (macOS 13 trở lên): dựng video talking-head, không lộ mặt và ảnh cuộn theo brief, xuất MP4 hoặc CapCut. Cần key bản quyền."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "click-video": {
+      "command": "/bin/sh",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/bootstrap/start.sh",
+        "serve"
+      ],
+      "env": {
+        "CLICK_WORKSPACE": "${CLAUDE_PROJECT_DIR}"
+      }
+    }
+  }
+}

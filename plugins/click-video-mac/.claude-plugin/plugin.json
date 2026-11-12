@@ -1,0 +1,19 @@
+{
+  "name": "click-video-mac",
+  "displayName": "NBD Video (Mac)",
+  "version": "0.4.9",
+  "description": "Bản cho máy Mac chip Apple M (macOS 13 trở lên). Dựng video TikTok 9:16 tự động từ video quay, file giọng hoặc nội dung ảnh cuộn, theo brief và thương hiệu từng khách. © 2026 Nguyễn Bá Duy, phân phối bởi CLICK Media.",
+  "author": {
+    "name": "Nguyễn Bá Duy (chủ sở hữu); phân phối: CLICK Media",
+    "url": "https://congty.click"
+  },
+  "homepage": "https://congty.click",
+  "license": "LicenseRef-CLICK-Proprietary",
+  "keywords": [
+    "video",
+    "tiktok",
+    "capcut",
+    "edit",
+    "vietnamese"
+  ]
+}
