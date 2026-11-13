@@ -439,8 +439,8 @@ def pending():
         return None
 
 
-def watch_updates(every=1800):
-    """While the plugin runs, look for a newer version every 30 minutes (user 12/11: a customer who keeps one chat open never
+def watch_updates(every=86400):
+    """While the plugin runs, look for a newer version once a day (user 12/11, besides the check at every start: a customer who keeps one chat open never
     started a new one, so the check at start never ran and the Brief form showed nothing). Only noted, never installed here."""
     while True:
         time.sleep(every)

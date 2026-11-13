@@ -23,7 +23,8 @@ Trả lời người dùng bằng tiếng Việt. Mọi việc đi qua các tool
 
 ## Mỗi dự án
 1. `mo_brief` (thêm `du_an` để mở sẵn dự án) và đưa đường dẫn cho người dùng.
-2. Chạy nền lệnh `click-engine wait`: nó in ra một yêu cầu từ form (phân tích, dựng, sửa, hoàn thành) rồi thoát. Làm xong yêu cầu thì chạy lại lệnh đó.
+2. Chạy nền lệnh `click-engine wait`: nó in ra một yêu cầu từ form (phân tích, dựng, sửa, hoàn thành, cập nhật) rồi thoát. Làm xong yêu cầu thì chạy lại lệnh đó. Luôn giữ lệnh này chạy suốt phiên: yêu cầu gửi lúc AI chưa nghe sẽ nằm chờ và được làm khi lệnh chạy lại.
+   - Yêu cầu `update` (khách bấm "Cập nhật ngay" trên thanh báo bản mới của form: khách đã đồng ý): gọi `cap_nhat`, rồi nhắn khách: "Đã tải bản mới. Bấm Tạo mới và nhắn: Mở Brief cho tôi." Ở phiên mới, gọi `cai_dat` để cài nốt phần dựng rồi `mo_brief`. Đang có việc dựng chạy thì báo khách chờ xong rồi bấm lại.
 3. Trước mỗi bước, gọi `lay_quy_tac` với đúng bước đó (`y-tuong`, `brief`, `canh`, `thiet-ke`, `am-thanh`, `mau`, `kiem-tra`, `anh-cuon`, `khong-lo-mat`, `su-co`, `tl-<thể loại>`, hoặc `kt-<tên>` cho kho kiến thức) và làm theo. Khi chọn bố cục, thành phần hay điền bảng cảnh, gọi `dm-bo-cuc`, `dm-thanh-phan`, `dm-tuy-chon`, `dm-nen-phu` (Ảnh nền, Lớp phủ): form chỉ hiện số và ảnh, ý nghĩa từng mã nằm ở đó.
 4. **Trước khi viết kịch bản dựng: đọc hết Brief, không đọc lướt.** Đọc từng tab và từng tab con, gồm cả các ô do AI đã chọn từ trước:
    - Dự án, Thương hiệu, Chữ, Âm thanh, Dựng.
